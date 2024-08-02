@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+<body>
+    <div id="header">
+    
+        <div class="container">
+            <nav>
+                <p><b>Welome to my porfolio</b></p>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#services">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                    <li><a target="_blank" href="https://drive.google.com/file/d/1Rw-yaIgoQLSNQcgdZlu_4EXRpLXKRRg_/view?usp=sharing" download class="btn">&nbsp;&nbsp;&nbsp;Download CV&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="headertext">
+
+         <!--  <div class="prof">
+                <img src="/images/DOC-20240803-WA0002.jpg">
+                </div>-->
+
+            <p><Font style="color: aliceblue;">Frontend Developer </Font></p>
+            <h1>Hi, I'm <span>Harsh Patil</span><br></h1>
+            <p id="headertextp1">I hope you will know more about me !</p>
+
+        </div>
+    </div>
+
+
+    <!--ABOUT SECTION-->
+
+    <div id="about">
+        <div class="about-container">
+            <div class="row-about">
+             <div class="about_col_1">
+                <img src="/images/img1.jpg">
+             </div>
+            
+             <div class="about_col_2">
+                <h1>About Me</h1>
+                <br>
+                <p>Hello! I'm Harsh, a web developer skilled in HTML, CSS, and JavaScript, 
+                    creating simple yet effective websites. Currently, I'm pursuing a degree in Information Technology 
+                    at Pillai College of Engineering in Navi Mumbai. My expertise extends to Python-based projects and database management, 
+                    enabling me to build comprehensive web solutions.As a member of the college placement committee,
+                     I actively contributeto connecting students with industry opportunities.Beyond academics and coding, 
+                    I'm deeply interested in Indian history, geopolitics, wars, culture, mythology, and new technology. 
+                    This diverse range of interests fuels my curiosity and passion for continuous learning.
+                    Feel free to explore my portfolio and get in touch if you'd 
+                    like to collaborate or connect!</p>
+                    <p><font style="color: #cd8900;font-size:16px">(Click to know more&nbsp;<ion-icon name="arrow-down-outline"></ion-icon>)</font></p><br>
+
+                    
+                    <div class="tab_titles">
+                        <p class="tab_links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab_links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab_links" onclick="opentab('Education')">Education</p>
+                    </div>
+<!--Tab Contents-->
+                    <div class="tab_contents active-tab" id ="Skills">
+                        <ul>
+                            <li><span>Frontend Devlopment</span><br>&nbsp;&nbsp;- Designig web interface</li>
+                            <li><span>Database Management</span><br>&nbsp;&nbsp;- Creating and monitering database</li>
+                            <li><span>Marketing</span><br>&nbsp;&nbsp;- Using unique pitching Skills</li>
+                            <li><span>Content writing and speaking</span><br>&nbsp;&nbsp;- Creating and Delivering Contenet in diffrent spectrum</li>
+
+                        </ul>
+                    </div>           
+<!--Tab Contents-->
+                    <div class="tab_contents" id ="Experiance">
+                        <ul>
+                            <li><span>Intern at Next24Tech Technology Services </span><br>&nbsp;&nbsp;- Designig web application Tasks</li>
+                            <li><span>HR-PR mentor in placement committee</span><br>&nbsp;&nbsp;- Working as team mangement head </li>
+                        </ul>
+                    </div>
+<!--Tab Contents-->
+                    <div class="tab_contents" id ="Education">
+                        <ul>
+                            <li><span>Graduvation</span><br>&nbsp;&nbsp;- From Pillai College of Engineering <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aggrigate pointer : <font style="font-size: 18px;">8.50</font></li>
+                            <li><span>HSC (12th)</span><br>&nbsp;&nbsp;- From Ramnivas Junior College <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage : <font style="font-size: 18px;">95.67</font></li>
+                            <li><span>SSC (10th)</span><br>&nbsp;&nbsp;- From D.S.High School <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Percentage : <font style="font-size: 18px;">93.20</font></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+             </div>
+        </div>
+    </div>
+
+<!--services-->
+    <div id="services">
+        <!--<div class="container">-->
+            <p class="sub-title">My Projects</p>
+            <div class="services-list">
+                
+                <div class="cards">
+                    <h2><font style="color: #cd8900;font-size: 50px"><ion-icon name="language"></ion-icon></font><br><font style="color: #cd8900;">Toxic Comments Classifer</font></h2><br>
+                    <p>The Internet is an open discussing space for everyone to freely express their opinions. However, 
+                        harassment and abuse are discouraging people from sharing their ideas and disturbing the internet environment.
+                         Platforms struggle to effectively facilitate conversations, leading many communities to limit or completely 
+                         shut down user comments if it’s toxic. Motivated by this problem, we want to build technology to protect voices
+                          in conversation by machine learning models that can identify toxicity in online conversations, where toxicity
+                           is defined as anything rude, disrespectful or otherwise likely to make someone leave a discussion</p> 
+                            <a href="https://docs.google.com/document/d/1NF9BaLnuAffE8Gx1xrNuh9RyZGd9QDT-/edit?usp=sharing&ouid=113873899213926152279&rtpof=true&sd=true" target="_blank"><font style="color: #cd8900;font-size: 20px;font-weight:600">Project Report</font></a>
+                </div>
+                <div>
+                    <h2><font style="color: #cd8900;font-size:50px"><ion-icon name="wallet"></font></ion-icon><br><font style="color: #cd8900;">Demo UPI Mobile Application</font></h2><br>
+                    <p>The Unified Payments Interface (UPI) has revolutionized the way we transfer money in India.
+                         In this project, a simple mock UPI app has been developed, which allows registered users to send money to each other.
+                        The app is designed to be user-friendly and easy to use. 
+                        The user can register by providing their mobile number and verifying it using an OTP.
+                         Once registered, the user can add their bank account details to the app.
+                        To send money, the user simply needs to select the recipient from their contacts
+                         list and enter the amount to be transferred. The app will then authenticate the 
+                         transaction using the user's UPI PIN and initiate the transfer.
+                        </p>
+                    <a href="https://docs.google.com/document/d/1AsycNlSyUsIXpw1cA2ZJhn4GaMy3xfNN/edit?usp=sharing&ouid=113873899213926152279&rtpof=true&sd=true" target="_blank"><font style="color: #cd8900;font-size: 20px;font-weight:600">Project Report</font></a>                 
+                </div>
+                <div>
+                    <h2><font style="color: #cd8900;font-size:50px"><ion-icon name="bicycle"></ion-icon></font><br><font style="color: #cd8900;">GYM Nutrition System</font></h2><br>
+                    <p>Website for a precision nutrition one-size-does-not-fit-all system based on nutrition information that provides tailored meal planning. 
+                        Gym and fitness fanatics were a segment of the community that was not included in its four-part developmental research even though
+                         they were significant target users. supplying each person with a customized diet that takes into account the physical makeup 
+                         of their body and offering specifics on the foods' nutritional values. Welcome to our ground-breaking knowledge-based method
+                          for nutrition! Utilize precision nutrition by using our website, where customized meal plans are created as per users requirements. </p>
+                    <a href="https://docs.google.com/document/d/1Wzu4lnE9dau-Okb53wzfRutNlrmNHQnu/edit?usp=sharing&ouid=113873899213926152279&rtpof=true&sd=true" target="_blank"><Project style="color: #cd8900;font-size: 20px;font-weight:600">Project Report</font></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--Contact info-->
+
+<div id="contact">
+    <div class="contact-container">
+        <div class="row-contact">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="contact-left-text">
+                    <p><ion-icon name="mail-unread"></ion-icon>&nbsp;harshspatil777@gmail.com</p>
+                    <p><ion-icon name="call"></ion-icon>&nbsp;+91 9324482379</p>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/harsh-patil-295376258/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://api.whatsapp.com/send/?phone=919324482379&text&type=phone_number&app_absent=0" target="_blank"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                    <a href="https://www.instagram.com/the.harshpatil?igsh=bzN0aDhteDgxdnN1"target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://mail.google.com/mail/u/1/#inbox?compose=new"target="_blank"><ion-icon name="mail-sharp"></ion-icon></a>
+                </div>
+                <a target="_blank" href="https://drive.google.com/file/d/1Rw-yaIgoQLSNQcgdZlu_4EXRpLXKRRg_/view?usp=sharing" download class="btn">&nbsp;&nbsp;&nbsp;Download CV&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Submit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Java script for about section tab contents-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab_links");
+        var tabcontents = document.getElementsByClassName("tab_contents");
+
+        function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+<!--Icon Script-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script src="https://kit.fontawesome.com/a2f9724647.js" crossorigin="anonymous"></script>
+
+<!--script for spreadsheet-->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwNWHlBq8Ka4Hd7RJLC-Xq0LdrHnOwnpDKq7alyOlNl3imL8VzCETUJF4cL3AOk7vOU/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

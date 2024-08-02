@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;   
+}
+
+/*For Scrolling Menu purpose*/
+html{
+    scroll-behavior: smooth;
+}
+/**/
+    
+
+body{
+    background: #2b2b2e;
+}
+
+#header{
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    margin-top: 0;
+}
+
+.container{
+    width: 100%;
+    padding: 5px 3%;
+    background: #060505;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav p{
+    color: #cd8900;
+    text-decoration: none ;
+    position:relative;
+    font-size: 45px;
+    margin-left: 0%;
+}
+
+
+nav ul li{
+    display: inline-block ;
+    list-style: none;
+    margin:  10px 20px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}   
+nav ul li a{
+    color: #cd8900;
+    text-decoration: none ;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a ::after{
+    content:'';
+    width:100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+.headertext{
+    font-size: 40px;
+    margin: 10px 5%;
+    margin-top: 10cm;
+    margin-bottom: 0cm;
+}
+
+.headertext p{
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.headertext h1{
+    font-size: 80px;
+    margin-top: 10px;
+}
+
+#headertextp1{
+    color:aliceblue ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
+
+/*----------about section css-----------*/
+
+#about{
+   width: 100%;
+   height: 100%;
+   
+}
+
+#about .about-container{
+    padding: 0cm;
+    background-color: #060505;
+}
+.row-about{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 96px; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.about_col_1{
+    flex-basis: 35%;
+}
+
+.about_col_1 img{
+width: 11cm;
+height: 15cm;
+border-radius: 15px;
+margin-top: 2cm;
+margin-bottom: 2.5cm;
+}
+
+.about_col_2{
+    flex-basis: 60%;
+    color: rgb(250, 249, 247);
+    margin-top: 0cm;
+    margin-bottom: 1cm;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+.tab_titles{
+display: flex;
+margin: 5px 0 5px;
+
+}
+
+.tab_links{
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #cd8900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab_links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(236, 228, 228);
+    position: absolute;
+    left:0 ;
+    bottom: -8px;
+    transition: 0.5sec;
+}
+.tab_links.active-link::after{
+    width: 100%;
+    
+}
+
+
+.tab_contents ul li{
+     list-style: none;
+     font-size: 14px;
+     color:#fffdfa;
+     margin-bottom: 20px;
+}
+
+.tab_contents ul li span{
+    font-size: 20px;
+    color:#cd8900;
+}
+
+.tab_contents{
+    display: none;
+}
+
+.tab_contents.active-tab{
+    display: block;
+}
+
+/*Services Section CSS*/
+
+#services{
+   
+    width: 100%;
+    color: #e8e5e0;
+    height: 100%;
+    background-color: #060505;
+    padding: 90px;
+}
+
+.services-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.sub-title{
+    color:#e8e5e0;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 1cm;
+}
+
+.services-list div a{
+    text-decoration: none;
+    margin-top:10px;
+    display: inline-block;
+}
+
+.services-list div{
+    background-color: #2b2b2e;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div:hover{
+    background: #d9ceb2;
+    transform: translateY(-10px);
+    color: #060505;
+    font-weight: 600;
+}
+
+/*------Contact page-------*/
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    background-color:#060505;
+    margin-top: 0cm;
+}
+
+.contact-left{
+    margin-top: 5cm;
+    flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: 5cm;
+    flex-basis: 60%;
+}
+
+.contact-left-text{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #e8e5e0;
+}
+
+.contact-left-text p{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline:none ;
+    background-color:#2b2b2e;
+    padding: 15px;
+    color:#ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    margin: 10px;
+
+}
+
+.row-contact{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px; 
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.social-icon a{
+    text-decoration:none ;
+    font-size:  30px;
+    margin-right: 15px;
+    color: #cd8900;
+    display: inline-block;
+    transition: transform 0.5s ;
+}
+
+.social-icon a:hover{
+    color:#d9ceb2;
+    transform: translateY(-10px);
+    
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2b2b2e;
+    color: #cd8900;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    border-width: 5px;
+    margin-left: 10px;
+    margin-top: 1cm;
+    transition: transform 0.5s ;
+   
+} /*for download CV*/
+
+.btn:hover{
+    transform: translateY(-10px);
+    background-color: #d9ceb2 ;
+    color: #cd8900;
+    font-weight: 600;
+}
+
+.submit-btn{
+    display: inline-block;
+    background-color: #2b2b2e;
+    color: #cd8900;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 0.5cm;
+    margin-left: 0.2cm;
+    border-width: 0px;
+    border-color: #f7e4e4;
+    font-weight: 500;
+    transition: transform 0.5s;
+    font-size: 16px;
+}
+
+.submit-btn:hover{
+    transform: translateY(-10px);
+    background-color: #d9ceb2 ;
+    color: #cd8900;
+    font-weight: 700;
+    
+}
+#msg{
+    margin-top: 1cm;
+    display: block;
+    margin-left: 10px;
+    color:#cd8900;
+}
+
+.prof img{
+    width: 15cm;
+    height:14cm ;
+    margin-left: 20cm;
+}
